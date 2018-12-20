@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    
+    height: 1500px;
+}
+
+
+.progress-container {
+    width: 100%;
+    height: 8px;
+    opacity: 100%;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #b3cce6;
+    width: 0%;
+}
+
+
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+
+header {
+}
+
+.w3-cyan-d2 {color:#fff !important; background-color:#0097ab !important}
+
+.w3-brown-l1 {color:#fff !important; background-color:#a07261 !important}
+
+.w3-blue-grey-d2 {color:#fff !important; background-color:#4d636f !important}
+
+.w3-indigo-d2 {color:#fff !important; background-color:#334191 !important}
+
+.w3-blue-grey-l3 {color:#000 !important; background-color:#becbd2 !important}
+
+.w3-amber-l3 {color:#000 !important; background-color:#ffe69b !important}
