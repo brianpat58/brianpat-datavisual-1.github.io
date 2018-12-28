@@ -7,6 +7,7 @@ body {
 }
 
 
+
 .progress-container {
     width: 100%;
     height: 8px;
@@ -15,7 +16,7 @@ body {
 
 .progress-bar {
     height: 8px;
-    background: #b3cce6;
+    background: #ffcc00;
     width: 0%;
 }
 
@@ -32,6 +33,10 @@ header {
 .w3-brown-l1 {color:#fff !important; background-color:#a07261 !important}
 
 .w3-blue-grey-d2 {color:#fff !important; background-color:#4d636f !important}
+
+.w3-blue-grey-d3 {color:#fff !important; background-color:#435761 !important}
+
+.w3-blue-grey-d5 {color:#fff !important; background-color:#303e45 !important}
 
 .w3-indigo-d2 {color:#fff !important; background-color:#334191 !important}
 
