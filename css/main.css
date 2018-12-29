@@ -16,7 +16,7 @@ body {
 
 .progress-bar {
     height: 8px;
-    background: #ffcc00;
+    background: #66ff99;
     width: 0%;
 }
 
@@ -27,6 +27,8 @@ h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 header {
 }
+
+.w3-black-l1 {color:#fff !important; background-color:#333333 !important}
 
 .w3-cyan-d2 {color:#fff !important; background-color:#0097ab !important}
 

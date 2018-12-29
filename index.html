@@ -16,7 +16,7 @@
     <body>
         <!-- Navbar -->
         <div class="w3-top">
-            <div class="w3-bar w3-blue-grey-d2 w3-card w3-left-align w3-large">
+            <div class="w3-bar w3-black-l1 w3-card w3-left-align w3-large">
                 <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-grey-d2" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">蝦米碗糕</a>
                 <a href="#g1" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Info-graphics</a>
@@ -66,11 +66,11 @@
         
         <!-- 價格差異圖 --> 
         
-        <div class="w3-row-padding w3-padding-64 w3-container" id="g1">
-            <h1 class="w3-center">消費者面向</h1>
-            <hr>
+        <div class="w3-row-padding w3-padding-64 w3-container w3-light-grey" id="g1">
+            <h1 class="w3-center"><b>消費者面向</b></h1>
             <br>
             <div class="w3-content">
+                <hr>
                 <div>
                 <h2>一般機車與電動機車的補助金額差異</h2>
                 <h5 class="w3-padding">我們油車使用市面上主要車種（SYM、YAMAHA、KYMCO、PGO），來和 Gogoro1、Gogoro2 作一個比較。</h5>
@@ -96,18 +96,41 @@
         
         
         <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
-            <h1 class="w3-center">能源結構面向</h1>
-            <hr>
-            <br>
-            
+            <h1 class="w3-center"><b>能源結構面向</b></h1><br>
         <!-- 算法講解-->
-            
-            
-            
-            <!-- 105台灣能源結構圖 -->
+            <div class="w3-content">
+                <div>
+                    <hr>
+                    <h2>首先，我們以現階段1300百多萬輛機車皆為電動機車的情況下去做假設:</h2>
+                    <div class="w3-container">
+                        <h5>我們使用交通部統計處 105 年的「機車使用狀況調查報告」，作爲機車車輛數與使用狀況的依據。</h5>
+                        <h5>發現105 年底機車登記為 1,367 萬輛，約 38 萬輛 (2.8%) 未使用，總計為 <b>1329</b> 萬輛使用中。</h5>
+                        <h5>機車使用狀況：平均一天行駛 13.3 km ， 平均每星期使用天數 5.1 天 (以一年 53 個星期來看)，平均一年行駛 3,594.99 km。</h5>
+                        <h5>接下來，我們依工研院所提供，電動機車每公里耗電量約為 0.024 kWh/km。</h5>
+                        <br>
+                        <h5>3,594.99 Ｘ 0.024 Ｘ 1329 萬輛 ＝ 電動機車每年總耗電量約為 <b>1,146,658,010.4</b>  kWh。</h5>
+                        <h5>看起來是一大數目對吧！不過其實它其實只佔 105 年總發電量的 <b>0.508 % </b>!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 估算電動機車所佔105年總發電量的比例-->
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
             <div class="w3-content">
                 <div class="w3-third">
-                    <h2 class="w3-padding">105年台灣發電量結構</h2>
+                    <h3 class="w3-padding">電動機車總耗電量佔105年總發電量的比例</h3>
+                </div>
+                <div class="w3-twothird w3-center">
+                    <div id="chartContainer11" style="height: 300px; width: auto;"></div>
+                </div>
+    
+            </div>
+        </div>    
+        <!-- 105台灣能源結構圖 -->
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
+            <div class="w3-content">
+                <div class="w3-third">
+                    <h3 class="w3-padding">105年台灣發電量結構</h3>
                     <h5 class="w3-padding">燃煤的火力發電依然是台灣主要的發電來源，大家 PM2.5 吸好吸滿，一個乾淨的煤沒了還有千千萬萬的煤。</h5>
                 </div>
                 <div class="w3-twothird w3-center">
@@ -116,19 +139,31 @@
             </div>
         </div>
         
-        <!-- 估算電動機車所佔105年總發電量的比例-->
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
+        <!-- 算法講解-->
+            <div class="w3-content">
+                <div>
+                    <hr>
+                    <h2>第二，我們以 105 年夏日尖峰時段去做假設：</h2>
+                    <div class="w3-container">
+                        <h5>105 年夏日尖峰負載為7月28日之 3,586 萬瓩 = 35860 kWh</h5>
+                        <h5>我們以 0.508 % 的比例下去計算，35860 X 0.0508 % = 夏日尖峰時段電動機車總耗電量約為 182.1688 MW。</h5>
+                        <h5>從以下圖中，我們可以發現電動車所佔的用電比例也是非常的少！</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--電動機車在夏日尖峰時段所佔發電裝置容量比例 -->
         <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
             <div class="w3-content">
                 <div class="w3-third">
-                    <h2 class="w3-padding">估算電動機車所佔105年總發電量的比例</h2>
+                    <h3 class="w3-padding">電動機車在夏日尖峰時段所佔發電裝置容量比例</h3>
                 </div>
                 <div class="w3-twothird w3-center">
-                    <div id="chartContainer11" style="height: 300px; width: auto;"></div>
+                    <div id="chartContainer12" style="height: 300px; width: auto;"></div>
                 </div>
-    
             </div>
         </div>
-        
         <!-- 105年台灣電力裝置結構-->
         <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
             <div class="w3-content">
@@ -138,50 +173,123 @@
                 <div class="w3-twothird w3-center">
                     <div id="chartContainer13" style="height: 300px; width: auto;"></div>
                 </div>
-    
             </div>
         </div>
         
-        <!--電動機車在夏日尖峰時段所佔發電裝置容量比例 -->
+        
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
+        <!-- 算法講解-->
+            <div class="w3-content">
+                <div>
+                    <hr>
+                    <h2>第三，我們要探討電動機車與一般燃油機車的碳排放量差異：</h2>
+                    <div class="w3-container">
+                        <h5>碳排放係數依據為何？</h5>
+                        <h5>以國際能源總署(International Energy Agency, IEA)統計方法建議，105 年台灣碳排係數為 <b>0.53</b> kg CO2/度。</h5>
+                        <h5>如何得知燃油機車的碳排？</h5>
+                        <h5>我們以工研院提供的算法做參考，CO2 排放量 = 車輛數 X 年行駛里程 X 碳排放係數 X 修正係數 。</h5>
+                        <h5>（修正係數皆趨近於 1 ，故不考慮）</h5>
+                        <h5>電動機車碳排 ＝ 105 年總耗電量 Ｘ 碳排放係數 ＝ 607,728,745.512（kg CO2e / 度)</h5>
+                        <h5>125cc.燃油機車碳排 ＝ 車輛數 Ｘ 年行駛里程 Ｘ 碳排放係數 Ｘ 修正係數 ＝ 2,866,645,026 （kg CO2e / 度）</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 105年電動機車與一般機車碳排比較 -->
         <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
             <div class="w3-content">
                 <div class="w3-third">
-                    <h2 class="w3-padding">電動機車在夏日尖峰時段所佔發電裝置容量比例</h2>
+                    <h3 class="w3-padding">105年一般機車與電動機車之碳排比較</h3>
+                    <h5 class="w3-padding">這個差距似乎沒理由不支持推動電動機車了</h5>
                 </div>
                 <div class="w3-twothird w3-center">
-                    <div id="chartContainer12" style="height: 300px; width: auto;"></div>
+                    <div id="chartContainer14" style="height: 300px; width: auto;"></div>
                 </div>
             </div>
         </div>
         
-        
-        
+        <!-- 能源解釋 -->
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
+            <div class="w3-content">
+                <div>
+                    <div class="w3-container"> 
+                        <h5>電動車是否真的環保，還有一項必須考量的因素就是其發電的來源。</h5>
+                        <h5>換而言之，也就是看一個國家的發電結構，是否真的環保。</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <!-- 103～106年發電量結構變化 -->
         <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
             <div class="w3-content">
                 <div class="w3-third">
                     <h2 class="w3-padding">103～106年發電量結構變化</h2>
+                    <h5 class="w3-padding">再生能源比例有增加，不過效果非常有限。核能使用明顯降低，相對而言，台灣使用火力發電比例明顯增加，空氣品質堪憂。</h5>
                 </div>
                 <div class="w3-twothird w3-center">
                     <div id="chartContainer9" style="height: 300px; width: auto;"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 電力排放係數 -->
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
+            <div class="w3-content">
+                <div class="w3-third">
+                    <h2 class="w3-padding">94年～106年電力排放係數</h2>
+                    <h5 class="w3-padding">在103年有下降的趨勢，不過近年開始不減反增，甚至與民國 94 年有相近的數值。</h5>
+                </div>
+                <div class="w3-twothird w3-center">
+                    <div id="chartContainer16" style="height: 300px; width: auto;"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
+        <!-- 圖片解釋-->
+            <div class="w3-content">
+                <div>
+                    <hr>
+                    <h2>最後，我們來了解電動車與一般燃油車能源轉換效率的差別：</h2>
+                    <br>
+                    <div class="w3-container w3-twothird">
+                        <img src="./images/electric_car.jpg" style="height: auto; width: auto">
+                    </div>
+                    <div class="w3-padding w3-third">
+                        <h5>從右圖可知，電動車引擎所產生的動力，最終會有 77% ~ 82% 提供給輪胎使用，是相當高的能源轉換效率。</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-content">
+                <div>
+                    <div class="w3-container w3-twothird">
+                        <img src="./images/car.jpg" style="height: auto; width: auto">
+                    </div>
+                    <div class="w3-padding w3-third">
+                        <h5>然而，一般汽車引擎在燃燒石油，提供輪胎本身的動力只剩 16% ~ 25%。</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 電動車與一般燃油車之能源轉換效率比較 -->
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
+            <div class="w3-content">
+                <div class="w3-third">
+                    <h3 class="w3-padding">電動車與一般燃油車之能源轉換效率比較</h3>
+                    <h5 class="w3-padding">電動車的能源轉換效率極高</h5>
+                </div>
+                <div class="w3-twothird w3-center">
+                    <div id="chartContainer15" style="height: 300px; width: auto;"></div>
                 </div>
     
             </div>
         </div>
         
-        <!-- 105年電動機車與一般機車碳排比較 -->
-        <div id="g2" class="w3-row-padding w3-padding-64 w3-container w3-blue-grey-d5">
-            <div class="w3-content">
-                <div class="w3-third">
-                    <h2 class="w3-padding">105年電動機車與一般機車碳排比較</h2>
-                </div>
-                <div class="w3-twothird w3-center">
-                    <div id="chartContainer14" style="height: 300px; width: auto;"></div>
-                </div>
-    
-            </div>
-        </div>
+        
+        
         
         
         <!-- 全球能源趨勢與台灣能源趨勢 -->
@@ -271,6 +379,9 @@ var chart = new CanvasJS.Chart("chartContainer1", {
 		labelFontColor: "#4F81BC",
 		tickColor: "#4F81BC"
 	},
+    axisX: {
+        labelFontSize: 16,
+    },
 	axisY2: {
 		title: "Millions of Barrels/day",
 		titleFontColor: "#C0504E",
@@ -364,11 +475,12 @@ var chart = new CanvasJS.Chart("chartContainer9", {
 	animationEnabled: true,
     theme: "dark2",
 	title: {
-		text: "103~106 台灣發電結構變化"
+		text: "103~106年台灣發電結構變化"
 	},
 	axisX: {
 		interval: 1,
-        valueFormatString: "String"
+        valueFormatString: "String",
+        labelFontSize: 16
 	},
 	axisY: {
 		title: "單位 億度"
@@ -529,7 +641,8 @@ var chart = new CanvasJS.Chart("chartContainer12", {
 		includeZero: false
 	},
 	axisX: {
-		title: "四類發電裝置"
+		title: "四類發電裝置",
+        labelFontSize: 16
 	},
 	data: [{
 		type: "column",
@@ -551,6 +664,9 @@ var chart = new CanvasJS.Chart("chartContainer13", {
 	title: {
 		text: "105年台灣電力裝置容量結構"
 	},
+    axisX: {
+        labelFontSize: 16,
+    },
 	data: [{
 		type: "pie",
 		startAngle: 25,
@@ -579,11 +695,81 @@ var chart = new CanvasJS.Chart("chartContainer14", {
 	axisY: {
 		title: "kg CO2e/度"
 	},
+    axisX: {
+        labelFontSize: 16,
+    },
 	data: [{        
 		type: "column",  
 		dataPoints: [      
-			{ y: 25322031063,  label: "一般燃機油幾車" },
+			{ y: 2866645026,  label: "125cc.燃機油機車" },
             { y: 607728745.5 , label: "電動機車" }
+		]
+	}]
+});
+chart.render();
+
+// 電動車與一般燃油車之能源轉換效率比較
+var chart = new CanvasJS.Chart("chartContainer15", {
+	animationEnabled: true,
+	theme: "dark2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "電動車與一般燃油車之能源轉換效率比較%"
+	},
+	axisY: {
+		valueFormatString: "#",
+	},
+    axisX: {
+        labelFontSize: 16,
+    },
+	data: [{        
+		type: "column",  
+		dataPoints: [      
+			{ y:  20.5, label: "一般燃油車" },
+			{ y: 79.5,  label: "電動車" },
+		]
+	}]
+});
+chart.render();
+    
+// 電力排放數
+var chart = new CanvasJS.Chart("chartContainer16", {
+	animationEnabled: true,  
+	title:{
+		text: "台灣電力排放係數"
+	},
+    theme: "dark2",
+	axisY: {
+		title: "電力排放係數",
+		valueFormatString: "#.###",
+		suffix: "kg CO2e",
+		stripLines: [{
+			value: 0.539,
+			label: "Average"
+		}]
+	},
+    axisX: {
+        valueFormatString: "string",
+        title: "民國",
+        labelFontSize: 16,
+    },
+	data: [{
+		yValueFormatString: "0.### kg CO2e",
+		xValueFormatString: "##",
+		type: "spline",
+		dataPoints: [
+			{label: "94", y: 0.555},
+			{label: "95", y: 0.562},
+			{label: "96", y: 0.558},
+			{label: "97", y: 0.555},
+			{label: "98", y: 0.543},
+			{label: "99", y: 0.534},
+			{label: "100", y: 0.534},
+			{label: "101", y: 0.529},
+			{label: "102", y: 0.519},
+			{label: "103", y: 0.518},
+			{label: "104", y: 0.525},
+			{label: "105", y: 0.530},
+			{label: "106", y: 0.554}
 		]
 	}]
 });
