@@ -78,7 +78,7 @@
                 </div>
                 <br>
                 <br>
-                <div class="w3-center" id="chartContainer1" style="height: 350px; width: 100%;">
+                <div class="w3-center" id="chartContainer1" style="height: 300px; width: 90%;">
                 </div>
                 </div>
             </div>
@@ -439,6 +439,9 @@ var chart = new CanvasJS.Chart("chartContainer1", {
 	title:{
 		text: "機車與電動機車的補助金額差異"
 	},	
+    axisX: {
+        labelFontSize: 16,
+    },
 	axisY: {
 		title: "NT$",
 		titleFontColor: "#4F81BC",
@@ -446,13 +449,6 @@ var chart = new CanvasJS.Chart("chartContainer1", {
 		labelFontColor: "#4F81BC",
 		tickColor: "#4F81BC"
 	},
-	axisY2: {
-		title: "Millions of Barrels/day",
-		titleFontColor: "#C0504E",
-		lineColor: "#C0504E",
-		labelFontColor: "#C0504E",
-		tickColor: "#C0504E"
-	},	
 	toolTip: {
 		shared: true
 	},
@@ -464,19 +460,13 @@ var chart = new CanvasJS.Chart("chartContainer1", {
 		type: "column",
 		name: "原價",
 		legendText: "原價",
-		showInLegend: true, 
+		showInLegend: true,
 		dataPoints:[
 			{ y: 84200, label: "Racing S 125" },
 			{ y: 84000, label: "Jet S 125" },
 			{ y: 83700, label: "勁戰 125" },
-			{ y: 85000, label: "Alpha Max 125" },
-			{ y: 59000, label: "GP 125" },
-			{ y: 59000, label: "GT Super 2" },
-			{ y: 65500, label: "新迪爵 125" },
-          	{ y: 69700, label: "勁豪 125"},
           	{ y: 73800, label: "Gogoro 2"},
           	{ y: 79800, label: "Gogoro 2 Plus"},
-          	{ y: 129000, label: "Gogoro S1"},
           	{ y: 95800, label: "Gogoro S2"}
 		]
 	},
@@ -489,14 +479,8 @@ var chart = new CanvasJS.Chart("chartContainer1", {
 			{ y: 2050, label: "Racing S 125" },
 			{ y: 2050, label: "Jet S 125" },
 			{ y: 2050, label: "勁戰 125" },
-			{ y: 2050, label: "Alpha Max 125" },
-			{ y: 2050, label: "GP 125" },
-			{ y: 2050, label: "GT Super 2" },
-			{ y: 2050, label: "新迪爵 125" },
-          	{ y: 2050, label: "勁豪 125"},
           	{ y: 24500, label: "Gogoro 2"},
           	{ y: 24500, label: "Gogoro 2 Plus"},
-          	{ y: 24500, label: "Gogoro S1"},
           	{ y: 24500, label: "Gogoro S2"}
 		]
 	},
@@ -509,14 +493,8 @@ var chart = new CanvasJS.Chart("chartContainer1", {
             { y: 82150, label: "Racing S 125" },
 			{ y: 81950, label: "Jet S 125" },
 			{ y: 81650, label: "勁戰 125" },
-			{ y: 82950, label: "Alpha Max 125" },
-			{ y: 56950, label: "GP 125" },
-			{ y: 56950, label: "GT Super 2" },
-			{ y: 63450, label: "新迪爵 125" },
-          	{ y: 67650, label: "勁豪 125"},
           	{ y: 49300, label: "Gogoro 2"},
           	{ y: 55300, label: "Gogoro 2 Plus"},
-          	{ y: 104500, label: "Gogoro S1"},
           	{ y: 71300, label: "Gogoro S2"}
         ]
            }]
