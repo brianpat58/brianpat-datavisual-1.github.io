@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
         <link rel="stylesheet" href="./css/main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
@@ -43,17 +44,15 @@
             <div class="w3-display-middle">
                 <h1 class="w3-margin w3-jumbo">太油太燃太吵 何不試試電動車吧!</h1>
                 <br>
-                <br>
-                <button class="w3-button w3-indigo-d2 w3-padding-large w3-large w3-margin-top"><a href="#t1">Let's Go</a></button>
             </div>
         </header>
         <br>
         
         <!-- 引言 -->
-        <div class="w3-content w3-center w3-row-padding-">
+        <div class="w3-content w3-row-padding-">
             <div class="w3-panel w3-card-2 w3-light-grey" id="t1">
             <h2>為什麼我們要探討它？</h2>
-            <h5 class="w3-padding">在台灣平均每100個人有59個人有機車，統計到2018年的九月，目前有掛牌的機車數已經達到13,825,385輛，就算在擁有各地方政府分別的補助下，電動機車的掛牌數仍舊就微乎其微，僅有164,877的掛牌數，佔整個機慢車的1.19%。</h5>
+            <h5 class="w3-padding">在台灣平均每100個人有59個人有機車，統計到2018年的九月，目前有掛牌的機車數已經達到13,825,385輛，就算在擁有各地方政府分別的補助下，電動機車的掛牌數仍舊微乎其微，僅有164,877的掛牌數，佔整個機慢車的1.19%。</h5>
             </div>
             <br>
             <br>
@@ -113,7 +112,7 @@
                     <hr>
                     <h3>一般機車與 Gogoro 的保養費用差異</h3>
                     <div class="w3-container">
-                        <h5>Gogoro 可是不用再額外花費任何保養費用喔！</h5>
+                        <h5>Gogoro 不用再額外花費任何保養費用喔！</h5>
                     </div>
                 </div>
             </div>
@@ -126,7 +125,7 @@
                     <img class="w3-center" src="images/%E4%B8%80%E8%88%AC%E6%A9%9F%E8%BB%8A%E5%83%B9%E6%A0%BC.png" alt="一般機車價格" style="width: 70%">
                 </div>
                 <div class="w3-center">
-                    <h3>Gogoto 保養費用</h3>
+                    <h3>Gogoro 保養費用</h3>
                     <img class="w3-center" src="images/gogoro%E5%83%B9%E6%A0%BC.png" alt="gogoro保養費用" style="width: 50%" height="40%">
                 </div>
             </div>
@@ -151,14 +150,14 @@
                     <h5 class="w3-padding">紅色越深代表密度越高，黃色則次之，完全沒有其分佈的則為綠色。</h5>
                 </div>
                 <div class="w3-twothird w3-center">
-                    <img src="images/gasstation_densityclear.png" alt="加油站分佈" style="width: 100%">
+                    <img src="images/gasstation_densityclear.png" alt="加油站分佈" style="width: 120%">
                 </div>
                 <div class="w3-third">
                     <h3 class="w3-padding">充電站分布圖</h3>
                     <h5 class="w3-padding">紅色越深代表密度越高，黃色則次之，完全沒有其分佈的則為綠色。</h5>
                 </div>
                 <div class="w3-twothird">
-                    <img src="images/gogoroclear.png" alt="充電站分布圖" style="width: 100%">
+                    <img src="images/gogoroclear.png" alt="充電站分布圖" style="width: 120%">
                 </div>
             </div>
         </div>
@@ -187,14 +186,28 @@
                     <img src="images/Webp.net-gifmaker.gif" alt="100 300 600公里能耗" style="width: 100%; height: 30%">
                 </div>
                 <div class="w3-third">
+                    <h3 class="w3-padding">在 100、300、600 公里 情況下，每天應行駛多少公里，才能使騎 Gogoro 的能源費小於燃油機車</h3>
+                </div>
+                <div class="w3-twothird w3-center w3-padding-64">
+                    <div id="chartContainer17" style="height: 300px; width: 100%;"></div>
+                </div>
+                <div class="w3-third">
                     <h3 class="w3-padding">在吃到飽的情況下，每天應行駛多少公里，才能使騎 Gogoro 的能源費小於燃油機車</h3>
                     <h5 class="w3-padding">淡水到東吳大學15.8 公里</h5>
                     <h5 class="w3-padding">新店到東吳17.7 公里</h5>
                     <h5 class="w3-padding">林口高中到東吳大學21.2 公里</h5>
                 </div>
                 <div class="w3-twothird w3-center w3-padding-64">
-                    <div id="chartContainer17" style="height: 300px; width: 100%;"></div>
+                    <div id="chartContainer18" style="height: 300px; width: 100%;"></div>
                 </div>
+            </div>
+        </div>
+        
+        <!-- 消費結論-->
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container">
+            <div class="w3-content">
+                <h3 class="w3-padding">通勤族推薦</h3>
+                <h5 class="w3-padding">根據資料顯示，在政府大力推廣的時空背景下，電動機車的補助大大高於燃油機車，再加以每月騎乘距離在600公里以上時，也就是單趟里程高於15公里，電動機車的燃料費便會高於燃油機車，於是乎我們可以誠心的推薦，只要你居住在郊區且每天要往返市區通勤，電動機車便是你的最佳選擇。</h5>
             </div>
         </div>
         
@@ -391,25 +404,55 @@
             </div>
         </div>
         
-        
-        
-        
-        
-        <!-- 全球能源趨勢與台灣能源趨勢 -->
-        
-        <!-- 全球機車產業結構趨勢與台灣機車產業結構趨勢 -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        <div id="g2" class="w3-row-padding w3-padding-64 w3-container">
+            <h1 class="w3-center w3-content w3-container"><b>2018 GEVO 電動車未來產業趨勢</b><hr></h1><br>
+        <!-- 算法講解-->
+            <div class="w3-content w3-card-4 w3-deep-purple-d2">
+                <div>
+                    <div class="w3-container">
+                        <div class="w3-quarter w3-center">
+                            <br>
+                            <br>
+                            <br>
+                            <img src="images/001-lightbulb.png" style="width: 50%">
+                        </div>
+                        <div class="w3-threequarter">
+                            <h3>Fact 1: 電池越來越便宜，效能也越來越好</h3>
+                            <p><span style="color: limegreen; font-size: 35px">&#9660;791 USD/kWh</span></p>
+                            <h4>2010 ~ 2017 電動車電池每千瓦減少了 791 美元</h4>
+                            <p><span style="color: red; font-size: 35px">&#9650;93.8 GWh</span></p>
+                            <h4>2010 ~ 2017 電動車電池容量增加了 93.8 GWh</h4>
+                        </div>
+                        <div class="w3-quarter w3-center">
+                            <br>
+                            <br>
+                            <br>
+                            <img src="images/002-car.png" style="width: 50%">
+                        </div>
+                        <div class="w3-threequarter">
+                            <hr>
+                            <h3>Fact 2 :  電動車產業前景看好</h3>
+                            <p><span style='font-size:35px; color: mediumspringgreen' class='far'>&#xf058; 117.6 million vehicles</span></p>
+                            <h4 class="w3-padding">2030 年預計增加 1億1760 萬輛純電動車（BEV)</h4>
+                            <p><span style='font-size:35px; color:springgreen' class='far'>&#xf058; 80.6 million vehicles</span></p>
+                            <h4>2030 年預計增加 8千萬量插電式混合動力汽車(PHEV）</h4>
+                        </div>
+                        <div class="w3-quarter w3-center">
+                            <br>
+                            <br>
+                            <img src="images/003-sprout.png" style="width: 50%">
+                        </div>
+                        <div class="w3-threequarter">
+                            <hr>
+                            <h3>Fact 3 :  電動車可以幫助減少大量碳排</h3>
+                            <p><span style="color: limegreen; font-size: 35px">&#9660;41,242,000 kg CO2e</span></p>
+                            <h4>台灣 Gogoro 至今所減少的 CO2 排放量，約等於 4,124,200 棵樹的吸收量</h4>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         
         
@@ -417,14 +460,14 @@
         <!-- Footer -->
         <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-black">
             <div class="w3-xlarge w3-padding-32">
-                <i class="fa fa-facebook-official w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-hover-opacity"></i>
+                <i class='fab fa-facebook' style='font-size:36px'></i>
+                <i class='fab fa-instagram' style='font-size:36px'></i>
+                <i class='fab fa-linkedin' style='font-size:36px'></i>
             </div>
             <h4>By 東吳大學巨資系 視覺化第七組 蝦米碗糕</h4>
             <br>
             <h5>製作</h5>
-            <h5>Brian Huang</h5>
+            <h5>Brian Huang  黃柏嵃</h5>
             <br>
         </footer>
         
@@ -859,7 +902,7 @@ var chart = new CanvasJS.Chart("chartContainer17", {
 	animationEnabled: true,
 	
 	title:{
-		text:"Gogoro 吃到飽里程比較"
+		text:"當購賣此gogoro月騎乘里程時，每日單趟通勤里程最遠距離為何"
 	},
 	axisX:{
 		interval: 1
@@ -878,6 +921,32 @@ var chart = new CanvasJS.Chart("chartContainer17", {
 			{ y: 2.272727273, label: "100 公里" },
 			{ y: 6.818181818, label: "300 公里" },
 			{ y: 13.63636364, label: "600 公里" },
+		]
+	}]
+});
+chart.render();
+    
+// Gogoro 里程比較1
+var chart = new CanvasJS.Chart("chartContainer18", {
+	animationEnabled: true,
+	
+	title:{
+		text:"Gogoro 吃到飽里程比較"
+	},
+	axisX:{
+		interval: 1
+	},
+	axisY2:{
+		interlacedColor: "rgba(1,77,101,.2)",
+		gridColor: "rgba(1,77,101,.1)",
+		title: "Number of km"
+	},
+	data: [{
+		type: "bar",
+		name: "類別",
+		axisYType: "secondary",
+		color: "#014D65",
+		dataPoints: [
 			{ y: 21.0730865, label: "綁約3個月" },
 			{ y: 17.55797616, label: "綁約兩年" },
 			{ y: 15.80042099, label: "綁約三年" },

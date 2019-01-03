@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-size: 30px;
     font-family: "Lato", sans-serif;
-    
     height: 1500px;
 }
 .parallax {
@@ -39,6 +38,8 @@ hr {
 }
 
 
+
+
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 
 h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
@@ -63,3 +64,7 @@ header {
 .w3-blue-grey-l3 {color:#000 !important; background-color:#becbd2 !important}
 
 .w3-amber-l3 {color:#000 !important; background-color:#ffe69b !important}
+
+.w3-deep-purple-l2 {color:#fff !important; background-color:#a384d8 !important}
+
+.w3-deep-purple-d2 {color:#fff !important; background-color:#532e92 !important}
